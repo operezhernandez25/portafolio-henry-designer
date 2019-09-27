@@ -1,0 +1,167 @@
+.first-section{
+    padding-top: 50px !important;
+    background-image: url('../images/background-blue.jpg');
+    background-repeat: no-repeat;
+    min-height: 800px;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+
+.second-section{
+    
+    background-image: url('../images/background-white.jpg');
+    background-repeat: no-repeat;
+    min-height: 800px;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+
+.third-section{
+    
+    background-image: url('../images/background-blue-footer.jpg');
+    background-repeat: no-repeat;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    min-height: 300px;
+    padding-top: 40px
+}
+
+
+.fourth-row{
+    padding-top: 8%;
+}
+
+.menu{
+    color: white;
+}
+
+#logo-henry{
+    display: block;
+    margin: 0 auto;
+    width: calc(50% );
+    height: auto;
+}
+
+.first-row{
+    margin-bottom: 100px
+}
+
+.btn-descargar{
+    color: white;
+    position: absolute;
+    bottom: 0px;
+    transform: rotate(-90deg);
+}
+
+.btn-outline-light {
+    color: #f8f9fa;
+    border-color: #00ddba;
+}
+
+button.btn.btn-outline-light.btn-descargar.btn-lg {
+    left: -25px;
+    border-radius: 30px;
+}
+
+.resumen-text{
+    left: -39px;
+    color: white;
+    position: absolute;
+    bottom: 45px;
+    transform: rotate(-90deg);
+}
+
+.row.three-row {
+    padding-top: 40px;
+}
+
+
+button.btn.btn-outline-light.btn-descargar.btn-lg:hover {
+    background-color: #00ddba;
+    border: none;
+}
+
+.social-media-icons{
+    color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+}
+.social-media-icons>img{
+    margin:8px;
+}
+
+i.fab {
+    display: inline-block;
+    border-radius: 60px;
+    border:1px solid white;
+    padding: 0.5em 0.7em;
+  
+  }
+
+  .box-inside-white{
+    -webkit-box-shadow: 0px 0px 82px -8px rgba(0,0,0,0.35);
+    -moz-box-shadow: 0px 0px 82px -8px rgba(0,0,0,0.35);
+    box-shadow: 0px 0px 82px -8px rgba(0,0,0,0.35);
+    min-height: 200px;
+    background-color: white;
+    padding: 4%;
+    height: 600px;
+  }
+
+  .who-am-i-text {
+    white-space: pre-line;
+    font-size: 55px;
+    font-weight: 900;
+    color: #0a2240;
+}
+
+.footer-text{
+    white-space: pre-line;
+    color: #d6d7db;
+}
+
+@media  screen and (max-width: 1920px){
+    .img-henry {
+        width: 563px;
+        height: auto;
+        position: absolute;
+        right: -20%;
+        top: 17%;
+    }
+}
+
+/* (1366x768) WXGA Display */
+@media  screen and (max-width: 1366px) {
+    .img-henry {
+        width: 606px;
+        height: auto;
+        position: absolute;
+        right: -25%;
+        top: 17%;
+    
+    }
+}
+
+
+.mail-text>a{
+    color: #d6d7db;
+}
+
+.icons {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+}
+
+
+.icons>img {
+    margin-left: 20px;
+    margin-right: 20px;
+}
