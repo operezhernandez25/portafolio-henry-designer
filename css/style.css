@@ -135,6 +135,14 @@ i.fab {
         right: -20%;
         top: 17%;
     }
+    #overlay-button {
+        position: absolute;
+        right: 13.6666%;
+        padding: 26px 11px;
+        z-index: 5;
+        cursor: pointer;
+        user-select: none;
+    }
 }
 
 /* (1366x768) WXGA Display */
@@ -146,6 +154,14 @@ i.fab {
         right: -25%;
         top: 17%;
     
+    }
+    #overlay-button {
+        position: absolute;
+        right: 5.5em !important;
+        padding: 26px 11px;
+        z-index: 5;
+        cursor: pointer;
+        user-select: none;
     }
 }
 
@@ -164,4 +180,77 @@ i.fab {
 .icons>img {
     margin-left: 20px;
     margin-right: 20px;
+}
+
+
+input[type=checkbox] {
+    display: none;
+}
+
+#overlay-button {
+    position: absolute;
+    right: 13.6666%;
+    padding: 26px 11px;
+    z-index: 5;
+    cursor: pointer;
+    user-select: none;
+}
+
+#overlay-button::after{
+    content: "\f0c9";
+}
+
+#overlay {
+    height: 100vh;
+    width: 100vw;
+    background-image: url('../images/background-menu.jpg');
+    background-repeat: no-repeat;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    z-index: 2;
+    visibility: hidden;
+    position: fixed;
+}
+
+#overlay-button:hover span, #overlay-button:hover span:before, #overlay-button:hover span:after {
+    background: #3F3E40;
+}
+
+
+
+input[type=checkbox]:checked ~ #overlay {
+  visibility: visible;
+}
+
+
+input[type=checkbox]:checked ~ #overlay-button::after {
+  content: "\f00d";
+}
+input[type=checkbox]:checked ~ #overlay-button span:after {
+  transform: rotate(-45deg) translate(7px, -7px);
+}
+
+
+
+#overlay ul {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+    height: 100vh;
+    padding-left: 0;
+    list-style-type: none;
+    
+}
+
+
+#overlay ul li a {
+    color: #fefefe;
+    text-decoration: none;
+    font-size: 5em;
+    font-family: 'TTNorms', sans-serif;
+    font-weight: 900;
 }
