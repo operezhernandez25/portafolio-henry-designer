@@ -1,6 +1,6 @@
 .first-section{
     padding-top: 50px !important;
-    background-image: url('../images/points-skyblue-opacity.png');
+    background-image: url('../images/points-skyblue-opacity.png'),url('../images/degradado_Mesa.png');
     background-repeat: no-repeat;
     min-height: 800px;
     -webkit-background-size: cover;
