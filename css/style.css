@@ -263,7 +263,7 @@ Tablet Resolution
 
 */
 
-@media  screen and (min-width: 1280px){
+@media  screen and (max-width: 1280px){
     .social-media-icons {
         color: white;
         display: flex;
