@@ -269,14 +269,14 @@ Tablet Resolution
         display: flex;
         flex-direction: column;
         align-items: flex-end;
-        top: -244px;
+        top: -10px;
     }
 
     .button-div,.resumen-ejecutivo {
         -ms-flex: 0 0 16.666667%;
         flex: 0 0 16.666667%;
         max-width: 16.666667%;
-        top: -171px;
+        top: -3px;
     }
 
     light.btn-descargar.btn-lg {
