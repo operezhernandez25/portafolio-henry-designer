@@ -12,7 +12,8 @@
 
 .second-section{
     
-    background-image: url('../images/background-white.jpg');
+    background-image: url('../images/points-white-background.png');
+    background-color: white;
     background-repeat: no-repeat;
     min-height: 800px;
     -webkit-background-size: cover;
