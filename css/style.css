@@ -196,6 +196,7 @@ input[type=checkbox] {
     z-index: 5;
     cursor: pointer;
     user-select: none;
+    margin-top: 59px;
 }
 
 #overlay-button::after{
