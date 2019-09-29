@@ -256,3 +256,60 @@ input[type=checkbox]:checked ~ #overlay-button span:after {
     font-family: 'TTNorms', sans-serif;
     font-weight: 900;
 }
+
+
+/*
+Tablet Resolution
+
+*/
+
+@media  screen and (min-width: 1280px){
+    .social-media-icons {
+        color: white;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-end;
+        top: -244px;
+    }
+
+    .col-md-2 {
+        -ms-flex: 0 0 16.666667%;
+        flex: 0 0 16.666667%;
+        max-width: 16.666667%;
+        top: -171px;
+    }
+
+    light.btn-descargar.btn-lg {
+        left: -44px;
+        border-radius: 30px;
+        /* top: -13px; */
+    }
+
+    .resumen-text {
+        left: -59px;
+        color: white;
+        position: absolute;
+        bottom: 45px;
+        transform: rotate(-90deg);
+    }
+    #logo-henry {
+        display: block;
+        margin: 0 auto;
+        width: calc(75% );
+        height: auto;
+    }
+
+    .row.first-row {
+        margin-top: 78px !important;
+    }
+
+    .row.three-row {
+        margin-bottom: 200px;
+    }
+
+    .btn.btn-outline-light.btn-descargar.btn-lg {
+        left: -44px !important;
+        border-radius: 30px;
+        /* top: -13px; */
+    }
+}
