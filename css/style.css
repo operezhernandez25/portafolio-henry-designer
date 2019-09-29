@@ -1,12 +1,13 @@
 .first-section{
     padding-top: 50px !important;
-    background-image: url('../images/background-blue.jpg');
+    background-image: url('../images/points-skyblue.png');
     background-repeat: no-repeat;
     min-height: 800px;
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
     background-size: cover;
+    background-color: #11172D
 }
 
 .second-section{
