@@ -272,7 +272,7 @@ Tablet Resolution
         top: -244px;
     }
 
-    .col-md-2 {
+    .button-div,.resumen-ejecutivo {
         -ms-flex: 0 0 16.666667%;
         flex: 0 0 16.666667%;
         max-width: 16.666667%;
