@@ -10,6 +10,17 @@
     background-color: #11172D
 }
 
+.first-section-periscope{
+    background-image: url('../images/background-puntos-grises-periscope.png');
+    padding-top: 50px !important;
+    background-repeat: no-repeat;
+    min-height: 800px;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    background-color: #fff
+}
 .second-section{
     
     background-image: url('../images/points-white-background.png');
@@ -377,4 +388,16 @@ img.img-periscope-text {
 
 .modal-backdrop.show {
     opacity: 0.07;
+}
+
+.button-exit-modal {
+    position: fixed;
+    z-index: 9;
+    top: 49%;
+    right: 3%;
+    opacity: 1;
+}
+
+.button-exit-modal>img{
+    width: 42px;
 }
