@@ -318,3 +318,63 @@ Tablet Resolution
     margin-top: 30px;
     }
 }
+
+
+div#modalPeriscope>div {
+    max-width: 80% !important;
+    margin-right: auto;
+    margin-left: auto;
+    margin-top: 179px;
+    margin-bottom: 20px;
+}
+
+.img-periscope{
+    max-width: 100%;
+}
+
+.periscope-first-text>.first-text,.img-cellphone-web-periscope-p{
+    margin-bottom: 2px;
+}
+
+img.img-cellphone-web-periscope {
+    width: 73px;
+    margin-top: 23px;
+    margin-bottom: 2px;
+}
+
+
+/*
+.img-persicope-1-background{
+    background: url('../images/periscope/1.png');
+    background-color: white;
+    background-repeat: no-repeat;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+
+
+.background-periscope {
+    background: url(../images/periscope/2.png);
+    background-position: top right;
+    background-repeat: no-repeat;
+    background-position: 97.9%;
+    background-size: contain;
+}
+
+*/
+
+
+img.img-periscope-text {
+    position: absolute;
+    right: -3.7%;
+    z-index: 9;
+    height: 100%;
+  
+}
+
+
+.modal-backdrop.show {
+    opacity: 0.07;
+}
