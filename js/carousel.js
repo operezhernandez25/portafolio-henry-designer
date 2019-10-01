@@ -131,6 +131,11 @@ var sliderTeam = (function(document, $) {
     sliderTeam.init();
   });
 
-  $("#persicope-image").click(function(){
-      console.log("test")
+  $(".main__image").click(function(){
+    let this_this = $(this);
+    if(this_this.closest('li').hasClass('slick-current'))
+    {
+      $("#"+this_this.data("modal")).modal();
+    }
+      
   })

@@ -207,7 +207,6 @@ input[type=checkbox] {
     z-index: 5;
     cursor: pointer;
     user-select: none;
-    margin-top: 59px;
 }
 
 #overlay-button::after{
@@ -405,4 +404,5 @@ img.img-periscope-text {
 
 .modal-body {
     padding-top: 0px;
+    padding-bottom: 0px;
 }
