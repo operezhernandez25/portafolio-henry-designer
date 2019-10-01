@@ -276,22 +276,22 @@
 @keyframes grow {
   0% {
     font-variation-settings: "wght" 200;
-    font-size: 50px;
+    font-size: 30px;
   }
   100% {
     font-variation-settings: "wght" 650;
-    font-size: 50px;
+    font-size: 30px;
   }
 }
 
 @keyframes shrink {
   0% {
     font-variation-settings: "wght" 650;
-    font-size: 50px;
+    font-size: 30px;
   }
   100% {
     font-variation-settings: "wght" 200;
-    font-size: 50px;
+    font-size: 30px;
   }
 }
 
