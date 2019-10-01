@@ -138,4 +138,11 @@ var sliderTeam = (function(document, $) {
       $("#"+this_this.data("modal")).modal();
     }
       
+  });
+
+
+
+  $("#overlay-button-carousel").click(function(){
+
+    $("#overlay-carousel").toggle();
   })

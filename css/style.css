@@ -158,6 +158,20 @@ i.fab {
     }
 }
 
+#overlay-button-carousel {
+    position: absolute;
+    top: 16px;
+    right: -3px;
+
+    z-index: 5;
+    cursor: pointer;
+    user-select: none;
+}
+
+#overlay-button-carousel::after{
+    content: "\f0c9";
+}
+
 /* (1366x768) WXGA Display */
 @media  screen and (max-width: 1366px) {
     .img-henry {
@@ -244,6 +258,14 @@ input[type=checkbox]:checked ~ #overlay-button::after {
 input[type=checkbox]:checked ~ #overlay-button span:after {
   transform: rotate(-45deg) translate(7px, -7px);
 }
+
+input[type=checkbox]:checked ~ #overlay-button-carousel::after {
+    content: "\f00d";
+    color: white;
+  }
+  input[type=checkbox]:checked ~ #overlay-button-carousel span:after {
+    transform: rotate(-45deg) translate(7px, -7px);
+  }
 
 
 

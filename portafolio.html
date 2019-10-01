@@ -19,7 +19,7 @@
   </head>
   <body>
         
-        <div id="overlay">
+        <div style="display:none;" id="overlay-carousel">
                 <ul>
                     <li><a href="portfolio.html">Inicio</a></li>
                     <li><a href="about.html">¿Quien Soy?</a></li>
@@ -27,19 +27,25 @@
                 </ul>
             </div>
     
-    <div class="first-section-periscope container" data-aos="fade-up">
+    <div class="first-section-periscope container-fluid" data-aos="fade-up">
         <div class="row">
                 <div class="col-md-1">
                   
                 </div>
-                <div class="col-md-4">
-                    <img class="img-periscope" style="top: -35%;position: relative;" src="./images/carousel/LOGO_PORTAFOLIO.png" alt="">
+                <div class="col-md-3">
+                    <img class="img-periscope" style="top: -34%;
+                    position: relative;
+                    left: -17%;
+                }" src="./images/carousel/LOGO_PORTAFOLIO.png" alt="">
                 </div>
                 <div class="col-md"></div>
                 <div class="col-md-1">
                         <input type="checkbox" id="overlay-input">
-                        <label for="overlay-input" id="overlay-button" class="fas  fa-2x menu" style="color:#11172D"></label>
+                        <label for="overlay-input" id="overlay-button-carousel" class="fas  fa-2x menu" style="color:#11172D"></label>
                 </div>
+                <div class="col-md-1">
+                  
+                  </div>
                 
         </div>
           
@@ -56,12 +62,12 @@
           </li>
       
           <li class="main__item">
-            <div class="main__image" style="background-image:url('https://images.unsplash.com/photo-1508500709478-37a0e8d6603c?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1650&q=80')"></div>
+            <div class="main__image" data-modal="modalLaBrochete"  style="background-image:url('./images/carousel/PERISCOPE.png')"></div>
             <h1 class="main__title">Sweden</h1>
           </li>
       
           <li class="main__item">
-            <div class="main__image" style="background-image:url('https://images.unsplash.com/photo-1544085311-11a028465b03?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=2089&q=80')"></div>
+            <div class="main__image" style="background-image:url('./images/carousel/PERISCOPE.png')"></div>
             <h1 class="main__title">Norway</h1>
           </li>
       
@@ -206,6 +212,90 @@
       </div>
 
 
+    <!--MODAL LA BROCHETE-->  
+<!-- Modal -->
+<div class="modal fade" id="modalLaBrochete" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog  modal-lg" role="document">
+      <div class="modal-content">
+        <div class="modal-body">
+         <div class="row">
+           <div class="col-md-1">
+              <button type="button" class="close button-exit-modal" style="    float: none;" data-dismiss="modal" aria-label="Close">
+                  <img src="./images/icons/X-05.png" alt="">
+              </button>
+           </div>
+           <div class="col-md-6 text-center">
+              
+           </div>
+           <div class="col-md-5">
+              
+            
+              
+        
+           </div>
+         </div>
+         <div class="container-fluid">
+          <div class="row" id="img-persicope-1-background">
+              
+            <div class="col-md-1"></div>
+            <div class="col-md-10 img-persicope-1-background">
+                <img src="./images/labrochete/2.png" class="img-periscope-text "  alt="">
+              <img class="img-periscope"  src="./images/labrochete/1.png" alt="">
+              <div class="text-center periscope-first-text">
+                  <p class="img-cellphone-web-periscope-p"><img src="./images/labrochete/3.png" class="img-cellphone-web-periscope" alt=""></p>
+                  <p class="first-text">Proyecto Personal</p>
+                  <p class="first-text">Sitio Web & App</p>
+                  <p>PERISCOPE</p>
+              </div>
+            </div>
+            <div class="col-md-1">
+                
+            </div>
+           </div>
+          </div>
+         <div class="row">
+          <div class="col-md-2"></div>
+          <div class="col-md-8 text-center periscope-first-text">
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
+              Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. 
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. 
+              
+            </p>
+             
+          </div>
+          <div class="col-md-2" ></div>
+        </div>
+        <div class="entre-lineas-celeste">
+            <div class="row">
+          
+                <div class="col-md-12" style="padding-left: 0px; padding-right: 0px">
+                  <img class="img-periscope" src="./images/labrochete/4.png" alt="">
+                </div>
+                
+              </div>
+              <div class="row">
+                  <div class="col-md-12" style="padding-left: 0px; padding-right: 0px; margin-top: 20px">
+                    <img class="img-periscope" src="./images/labrochete/5-11-06.png" alt="">
+                    </div>
+              </div>
+              
+        </div>
+        <div class="row">
+            <div class="col-md-1"></div>
+              <div class="col-md-10" >
+                <img class="img-periscope"src="./images/labrochete/10.png" alt="">
+              </div>
+            <div class="col-md-1"></div>
+          </div>
+        
+         
+      </div>
+        
+      </div>
+    </div>
+  </div>
+
 
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
@@ -247,6 +337,7 @@ $(".main__slider").slick({
   slidesToScroll: 1,
   arrows: false,
   initialSlide: 2,
+  autoplay:true,
   responsive: [
     {
       breakpoint: 1000,
