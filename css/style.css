@@ -90,10 +90,10 @@ button.btn.btn-outline-light.btn-descargar.btn-lg {
 }
 
 .resumen-text{
-    left: -39px;
+    left: -44px;
     color: white;
     position: absolute;
-    bottom: 45px;
+    bottom: 25px;
     transform: rotate(-90deg);
     font-family: Nexa Light;
 }
@@ -332,7 +332,7 @@ Tablet Resolution
     }
 
     .resumen-text {
-        left: -67px;
+       
         color: white;
         position: absolute;
         bottom: 34px;
@@ -355,7 +355,7 @@ Tablet Resolution
     }
 
     .btn.btn-outline-light.btn-descargar.btn-lg {
-        left: -48px !important;
+        left: -48px;
         border-radius: 30px;
         /* top: -13px; */
     }
@@ -447,3 +447,104 @@ img.img-periscope-text {
 .footer-text{
     font-family: Nexa Light;
 }
+
+
+@media only screen and (max-width: 600px) {
+    .row.first-row {
+      margin-top: 0px !important;
+      margin-bottom: 0px !important;
+    }
+    .btn-descargar {
+        color: white;
+        position: absolute;
+        bottom: 0px;
+        transform: none !important;
+        right: 0px !important;
+        left: 0px !important;
+
+    }
+
+    .img-henry{
+        display: none;
+    }
+
+    .resumen-text {
+        color: white;
+        position: absolute;
+        bottom: 0px;
+        transform: none !important;
+        right: 0px !important;
+        left: 0px !important;
+    }
+
+    .btn-descargar{
+        position: relative;
+    }
+
+    .button-div, .resumen-ejecutivo {
+        -ms-flex: 0 0 16.666667%;
+        flex: none;
+        max-width: none;
+        /* top: 2px; */
+    }
+
+    .col-md-2.social-media-icons {
+        display: none;
+    }
+
+    .button-div {
+        text-align: center!important;
+        position: absolute;
+        top: 85%;
+    }
+
+    .resumen-ejecutivo{
+        text-align: center !important;
+        position: absolute;
+        top: 85%;
+    }
+
+    label#overlay-button {
+        margin-left: 100%;
+        /* margin-right: 100%; */
+        width: 50px;
+    }
+
+    .col-md.logo-div-index {
+        position: absolute;
+        top: 38%;
+    }
+
+    label#overlay-button {
+        right: 44% !important;
+    }
+    p.who-am-i-text {
+        text-align: center;
+    }
+
+    p.henry-description {
+        text-align: center;
+    }
+    p.footer-text {
+        text-align: center !important;
+    }
+
+    .icons {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        padding-bottom: 25px !important;
+    }
+
+    img.img-henry-mobile {
+        width: 129%;
+        position: relative;
+        left: -63px !important;
+        display: block !important;
+    }
+
+    .second-section.container-fluid {
+        min-height: 700px;
+    }
+        
+  }
