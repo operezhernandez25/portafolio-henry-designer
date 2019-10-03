@@ -1,3 +1,6 @@
+
+
+
 .first-section{
     padding-top: 50px !important;
     background-image: url('../images/points-skyblue-opacity.png'),url('../images/degradado_Mesa.png');
@@ -9,6 +12,9 @@
     background-size: cover;
     background-color: #11172D
 }
+
+
+
 
 .first-section-periscope{
     background-image: url('../images/background-puntos-grises-periscope.png');
@@ -80,6 +86,7 @@
 button.btn.btn-outline-light.btn-descargar.btn-lg {
     left: -25px;
     border-radius: 30px;
+    font-family: 'Nexa Bold';
 }
 
 .resumen-text{
@@ -88,6 +95,7 @@ button.btn.btn-outline-light.btn-descargar.btn-lg {
     position: absolute;
     bottom: 45px;
     transform: rotate(-90deg);
+    font-family: Nexa Light;
 }
 
 .row.three-row {
@@ -286,7 +294,7 @@ input[type=checkbox]:checked ~ #overlay-button-carousel::after {
     color: #fefefe;
     text-decoration: none;
     font-size: 5em;
-    font-family: 'TTNorms', sans-serif;
+    font-family: 'Montserrat Extra Bold';
     font-weight: 900;
 }
 
@@ -319,11 +327,12 @@ Tablet Resolution
     }
 
     .resumen-text {
-        left: -59px;
+        left: -67px;
         color: white;
         position: absolute;
-        bottom: 45px;
+        bottom: 34px;
         transform: rotate(-90deg);
+        
     }
     #logo-henry {
         display: block;
@@ -341,7 +350,7 @@ Tablet Resolution
     }
 
     .btn.btn-outline-light.btn-descargar.btn-lg {
-        left: -44px !important;
+        left: -48px !important;
         border-radius: 30px;
         /* top: -13px; */
     }
@@ -427,4 +436,9 @@ img.img-periscope-text {
 .modal-body {
     padding-top: 0px;
     padding-bottom: 0px;
+}
+
+
+.footer-text{
+    font-family: Nexa Light;
 }
