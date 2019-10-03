@@ -30,7 +30,7 @@
   display: flex;
   align-items: center;
   height: 100vh;
-  font-family: "LeagueSpartanVariable";
+  /*font-family: "LeagueSpartanVariable";*/
   background: var(--black);
   overflow: hidden;
   transition: background .3s;
@@ -419,5 +419,13 @@ h1.main__title {
   font-size: 5em;
   font-family: 'TTNorms', sans-serif;
   font-weight: 900;
+}
+
+.main__title{
+  font-family:  'Montserrat Extra Bold';
+}
+
+.main__subtitle{
+  font-family:  'Montserrat Bold';
 }
 
