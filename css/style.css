@@ -366,7 +366,7 @@ Tablet Resolution
 }
 
 
-div#modalPeriscope>div,div#modalLaBrochete>div ,div#modalQueChivo>div {
+div#modalPeriscope>div,div#modalLaBrochete>div ,div#modalQueChivo>div,div#modalLaBrocheteMarca>div,div#modalDeMaiz>div {
     max-width: 84% !important;
     margin-right: auto;
     margin-left: auto;
