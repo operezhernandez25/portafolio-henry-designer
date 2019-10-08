@@ -9,6 +9,8 @@
     <link rel="stylesheet" href="./css/bootstrap.min.css">
     <link rel="stylesheet" href="./css/style.css?v=1.22">
     <link rel="stylesheet" href="./fonts/fonts.css">
+    <link rel="stylesheet" href="./css/carousel/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.css">
     <title>Henry Miranda!</title>
   </head>
   <body>
@@ -94,6 +96,74 @@
             </div>
             
     </div>
+    <div class="container-fluid background-portfolio-logo">
+        <div class="row">
+            <div class="col-md-2">
+                <img style="max-width: 183%;margin-left: 19px;" src="./images/logos/logo-portfolio.png" alt="">
+            </div>
+            <div class="col-md-8 text-center">
+                <p class="portafolio-text-center">PORTAFOLIO</p>
+            </div>
+            <div class="col-md-2"></div>
+        </div>
+    </div>
+    <main class="main">
+        
+        <ul class="main__slider main__slider--countries" style="top: 50%;position: relative !important;">
+      
+            <li class="main__item">
+                <div class="main__image" data-modal="modalPeriscope" style="background-image:url('./images/carousel/PERISCOPE.png')"></div>
+                <h1 class="main__title">PERISCOPE</h1>
+                <p class="main__subtitle">PROYECTO UI</p>
+              </li>
+          
+              <li class="main__item">
+                <div class="main__image" data-modal="modalLaBrochete"  style="background-image:url('./images/carousel/BROCHETTE.png')"></div>
+                <h1 class="main__title">LA BROCHETE</h1>
+                <p class="main__subtitle">PROYECTO UI</p>
+              </li>
+          
+              <li class="main__item">
+                <div class="main__image"  data-modal="modalQueChivo" style="background-image:url('./images/carousel/QUE_CHIVO.png')"></div>
+                <h1 class="main__title">QUÉ CHIVO</h1>
+                <p class="main__subtitle">PROYECTO UI</p>
+              </li>
+      
+          <li class="main__item">
+            <div class="main__image" data-modal="modalDeMaiz" style="background-image:url('./images/carousel/DE_MAIZ.png');background-size: contain;background-repeat: no-repeat;background-position-y: 0;"></div>
+            <h1 class="main__title">DE MAÍZ</h1>
+                <p class="main__subtitle">PROYECTO UI</p>
+          </li>
+      
+          <li class="main__item">
+            <div class="main__image" data-modal="modalLaBrocheteMarca" style="background-image:url('./images/carousel/BROCHETTE-MARCA.png');background-size: contain;background-repeat: no-repeat;background-position-y: 0;"></div>
+            <h1 class="main__title">LA BROCHETE</h1>
+                <p class="main__subtitle">MARCA</p>
+          </li>
+          <!--<li class="main__item">
+              <div class="main__image" style="background-image:url('https://images.unsplash.com/photo-1535923766910-e7143cd1a47c?ixlib=rb-1.2.1&auto=format&fit=crop&w=700&q=80')"></div>
+              <h1 class="main__title">Denmark</h1>
+            </li>
+            <li class="main__item">
+                <div class="main__image" style="background-image:url('https://images.unsplash.com/photo-1535923766910-e7143cd1a47c?ixlib=rb-1.2.1&auto=format&fit=crop&w=700&q=80')"></div>
+                <h1 class="main__title">Denmark</h1>
+              </li>-->
+        </ul>
+      
+        <a class="main__info" href="#">
+            <svg class="main__info-icon" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <circle cx="12" cy="12" r="10"></circle>
+              <line x1="12" y1="16" x2="12" y2="12"></line>
+              <line x1="12" y1="8" x2="12" y2="8"></line>
+            </svg>
+          </a>
+      
+        <div class="main__options" style="display: none">
+          <a class="main__option countries active" href="#">Countries</a>
+          <a class="main__option sports" href="#">Sports</a>
+        </div>
+      
+      </main>
     <div class="third-section container-fluid" data-aos="fade-up">
             <div class="row">
                     <div class="col-md-1"></div>
@@ -135,9 +205,56 @@
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="https://kit.fontawesome.com/01c0503862.js" crossorigin="anonymous"></script>
+    <script src="./js/carousel.js?ver=0.01"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/velocity/1.1.0/velocity.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
     <script src="js/bootstrap.min.js"></script>
     <script src="https://kit.fontawesome.com/01c0503862.js" crossorigin="anonymous"></script>
-    
+    <script src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+
+    <script>
+    const countries = document.querySelector(".countries"),
+  sports = document.querySelector(".sports"),
+  countriesSlider = document.querySelector(".main__slider--countries"),
+  sportsSlider = document.querySelector(".main__slider--sports"),
+  main = document.querySelector(".main");
+
+countries.addEventListener("click", function() {
+  countriesSlider.style.visibility = "visible";
+  sportsSlider.style.visibility = "hidden";
+  main.classList.remove("main--sports");
+  this.classList.add("active");
+  sports.classList.remove("active");
+});
+
+sports.addEventListener("click", function() {
+  countriesSlider.style.visibility = "hidden";
+  sportsSlider.style.visibility = "visible";
+  main.classList.add("main--sports");
+  this.classList.add("active");
+  countries.classList.remove("active");
+});
+
+$(".main__slider").slick({
+  centerMode: true,
+  infinite: false,
+  slidesToShow: 3,
+  slidesToScroll: 1,
+  arrows: false,
+  initialSlide: 2,
+  autoplay:true,
+  responsive: [
+    {
+      breakpoint: 1000,
+      settings: {
+        slidesToShow: 1,
+        fade: true
+      }
+    }
+  ]
+});
+</script>
   </body>
 </html>

@@ -548,3 +548,26 @@ img.img-periscope-text {
     }
         
   }
+
+
+  .background-portfolio-logo{
+    background-image: url(/images/points-white-background-short.png);
+    background-position-y: -8px;
+  }
+
+  .main{
+    background-image: url(/images/points-white-background-long.png) !important;
+
+  }
+
+  .portafolio-text-center{
+      color:#0a2240;
+      padding-top: 23%;
+      font-size: 44px;
+      font-family: 'Nexa Light';
+  }
+
+
+  svg.main__info-icon {
+    display: none;
+}
