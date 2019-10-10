@@ -571,3 +571,86 @@ img.img-periscope-text {
   svg.main__info-icon {
     display: none;
 }
+
+.contact-section {
+    padding-top: 50px !important;
+    background-image: url(../images/points-skyblue-opacity.png),url(../images/degradado_Mesa.png);
+    background-repeat: no-repeat;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    background-color: #11172D;
+    height: 100vh;
+}
+
+.image-contact-logo {
+    max-width: 100%;
+    padding-left: 50px;
+    padding-right: 50px;
+    padding-bottom: 42px;
+}
+
+.form-contact{
+    padding-top: 9px;
+    text-align: center;
+    padding-left: 30px;
+    padding-right: 30px;
+    padding-bottom: 60px;
+}
+
+.contact-text{
+    padding-top: 60px;
+    font-family: Nexa Light;
+}
+
+.input-contact{
+    background: transparent;
+    border-bottom: 1px solid white !important;
+    border-style: none;
+    border-radius: 0px;
+    color: white !important;
+    font-family: Nexa Light;
+}
+.input-contact::placeholder{
+    color:white !important;
+}
+
+.form-control:focus{
+    background: transparent;
+    box-shadow:none;
+}
+
+.button-contact-form{
+    min-width: 100% !important;
+    border-radius: 26px;
+    background-color: #06ffe9;
+    color:#0a1638;
+    font-weight: 900;
+    border-color:transparent;
+    margin-top: 20px;
+    font-family: Nexa Bold;
+}
+
+.icon-social-media-contact{
+    max-width: 51px;
+    padding: 7px;
+}
+
+.div-social-media-contact{
+    display: flex;
+    justify-content: center;
+}
+
+.copyright-contact{
+    text-align: center;
+    padding-top: 30px;
+    font-size:14px;
+    font-family: Nexa Light;
+}
+
+.arrow-up-img{
+    max-width: 86px;
+    float: right;
+    margin-right: 29px;
+}

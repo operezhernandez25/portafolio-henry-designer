@@ -13,6 +13,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.css">
     <link rel="stylesheet" href="css/switch.css">
     <title>Henry Miranda!</title>
+    
   </head>
   <body>
         <input type="checkbox" id="overlay-input">
@@ -170,6 +171,54 @@
         </div>
       
       </main>
+      <div class="contact-section container-fluid" data-aos="fade-up">
+            <div class="row">
+                    <div class="col-md-1"></div>
+                    <div class="col-md-3">
+                        
+                    </div>
+                    <div class="col-md-4">
+                        <img class="image-contact-logo" src="./images/contact/logo.png" alt="">
+                        <div style="background-color: rgba(0, 0, 0, 0.2);padding-bottom: 50px;">
+                                <P class="contact-text" style="TEXT-ALIGN:CENTER">CONTÁCTAME</P>
+                                <form id="comment_form" class="form-contact" action="send-mail.php">
+                                    <div class="form-group">                          
+                                        <input type="text" class="form-control input-contact" id="name" aria-describedby="emailHelp" placeholder="Nombre">
+                                      </div>
+                                      <div class="form-group">
+                                        <input type="email" class="form-control input-contact" id="email" placeholder="Email">
+                                      </div>
+                                      
+                                      <div class="form-group">
+                                            
+                                            <textarea class="form-control input-contact" placeholder="Mensaje" id="comment" rows="3"></textarea>
+                                        </div>
+                                      <button type="submit" class="btn btn-primary button-contact-form">Enviar</button>
+                                </form>
+                                <div class="div-social-media-contact">
+                                    <img class="icon-social-media-contact" src="./images/icons/contact/fb.png" alt="">
+                                    <img class="icon-social-media-contact" src="./images/icons/contact/insta.png" alt="">
+                                    <img class="icon-social-media-contact" src="./images/icons/contact/in.png" alt="">
+                                    <img class="icon-social-media-contact" src="./images/icons/contact/be.png" alt="">
+                                </div>
+                        </div>
+                        
+                    </div>
+                    <div class="col-md-3">
+                        
+                    </div>
+                    <div class="col-md-1"></div>
+            </div>
+            <div class="row">
+                <div class="col-md"></div>
+                <div class="col-md-6">
+                        <p class="copyright-contact">2019 © Henry Miranda | Sitio web por <span style="color:#06ffe9;     font-family: Nexa Bold;">Óscar Pérez</span></p>
+                </div>
+                <div class="col-md">
+                    <img class="arrow-up-img" src="./images/icons/contact/arrow-up.png" alt="">
+                </div>
+            </div>
+    </div>
     <div class="third-section container-fluid" data-aos="fade-up">
             <div class="row">
                     <div class="col-md-1"></div>
@@ -346,10 +395,7 @@
   
      </div>
    </div>
-   <div class="container-fluid" style="
-   padding-left: 0px;
-   padding-right: 0px;
-">
+   <div class="container-fluid" style="padding-left: 0px;padding-right: 0px;">
     
    
 
@@ -535,7 +581,36 @@
     <script src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/107/three.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.1.3/TweenMax.min.js"></script>
-    <script src="/js/switch.js"></script>
+    <script src="./js/switch.js"></script>
+    <script src="https://www.google.com/recaptcha/api.js?render=6LfH2LwUAAAAAFX5va3EJbgyWs_pNeeeEPU2eA16"></script>
+
+    <script>
+      // when form is submit
+   $('#comment_form').submit(function() {
+       // we stoped it
+       event.preventDefault();
+       var email = $('#email').val();
+       var name = $("#name").val();
+       var comment = $("#comment").val();
+       // needs for recaptacha ready
+       grecaptcha.ready(function() {
+           // do request for recaptcha token
+           // response is promise with passed token
+           grecaptcha.execute('6LfH2LwUAAAAAFX5va3EJbgyWs_pNeeeEPU2eA16', {action: 'create_comment'}).then(function(token) {
+               // add token to form
+               $('#comment_form').prepend('<input type="hidden" name="g-recaptcha-response" value="' + token + '">');
+                   $.post("send-mail.php",{email: email, comment: comment,name:name, token: token}, function(result) {
+                           console.log(result);
+                           if(result.success) {
+                                   alert('Thanks for posting comment.')
+                           } else {
+                                   alert('You are spammer ! Get the @$%K out.')
+                           }
+                   });
+           });;
+       });
+ });
+ </script>
     <script>
     const countries = document.querySelector(".countries"),
   sports = document.querySelector(".sports"),
