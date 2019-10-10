@@ -1,4 +1,7 @@
 <?php
+
+include("php-mailjet-v3-simple.class.php");
+$mj = new Mailjet( 'b8cc47ac4f167c8d610b12539f405fce', '3e95eb8a82e839d267a6653043978462');
   $email;$comment;$captcha;$name;
   $email = filter_input(INPUT_POST, 'email', FILTER_VALIDATE_EMAIL);
   $comment = filter_input(INPUT_POST, 'comment', FILTER_SANITIZE_STRING);
@@ -27,18 +30,16 @@
   $responseKeys = json_decode($response,true);
   header('Content-type: application/json');
   if($responseKeys["success"]) {
-    // using SendGrid's PHP Library
-    // https://github.com/sendgrid/sendgrid-php
-    require './sendgrid-php/vendor/autoload.php';
-    $sendgrid = new SendGrid("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");
-    $email    = new SendGrid\Email();
-
-    $email->addTo("operezhernandez25@gmail.com")
-        ->setFrom("you@youremail.com")
-        ->setSubject("Sending with SendGrid is Fun")
-        ->setHtml("and easy to do anywhere, even with PHP");
-
-    $sendgrid->send($email);
+    $params = array(
+        "method" => "POST",
+        "from" => "operezhernandez25@gmail.com",
+        "to" => 'oscarpsn10@gmail.com',
+        "subject" => "Contacto HenryDesign",
+        "html" => "</html><br><b>Mensaje de:</b> ".$name.",".$email."<br> <b>Comentario:</b> <br>".$comment."</html>"
+    );
+    
+    $result = $mj->sendEmail($params);
+    
     echo json_encode(array('success' => 'true'));
   } else {
     echo json_encode(array('success' => 'false'));
