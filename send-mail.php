@@ -12,7 +12,7 @@ $mj = new Mailjet( 'b8cc47ac4f167c8d610b12539f405fce', '3e95eb8a82e839d267a66530
     exit;
   }
   $secretKey = "6LfH2LwUAAAAAAt74bbdMTIXX4rmjwkVIvRvATeE";
-  $ip = $_SERVER['REMOTE_ADDR'];
+
 
   // post request to server
   $url = 'https://www.google.com/recaptcha/api/siteverify';
