@@ -27,7 +27,7 @@
   $responseKeys = json_decode($response,true);
   header('Content-type: application/json');
   if($responseKeys["success"]) {
-    require 'vendor/autoload.php'; // If you're using Composer (recommended)
+    //require 'vendor/autoload.php'; // If you're using Composer (recommended)
     // Comment out the above line if not using Composer
     require("sendgrid-php/sendgrid-php.php");
     // If not using Composer, uncomment the above line and
