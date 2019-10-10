@@ -27,7 +27,18 @@
   $responseKeys = json_decode($response,true);
   header('Content-type: application/json');
   if($responseKeys["success"]) {
-    
+    // using SendGrid's PHP Library
+    // https://github.com/sendgrid/sendgrid-php
+    require './sendgrid-php/vendor/autoload.php';
+    $sendgrid = new SendGrid("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");
+    $email    = new SendGrid\Email();
+
+    $email->addTo("test@sendgrid.com")
+        ->setFrom("you@youremail.com")
+        ->setSubject("Sending with SendGrid is Fun")
+        ->setHtml("and easy to do anywhere, even with PHP");
+
+    $sendgrid->send($email);
     echo json_encode(array('success' => 'true'));
   } else {
     echo json_encode(array('success' => 'false'));
