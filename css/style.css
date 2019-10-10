@@ -659,3 +659,7 @@ img.img-periscope-text {
     background-color: #06ffe9;
     color: white !important;
 }
+
+.grecaptcha-badge{
+	visibility: collapse !important;  
+}

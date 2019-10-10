@@ -7,7 +7,7 @@
 
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="./css/bootstrap.min.css">
-    <link rel="stylesheet" href="./css/style.css?v=1.25">
+    <link rel="stylesheet" href="./css/style.css?v=1.26">
     <link rel="stylesheet" href="./fonts/fonts.css">
     <link rel="stylesheet" href="./css/carousel/style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.css">
@@ -185,15 +185,15 @@
                                 <P class="contact-text" style="TEXT-ALIGN:CENTER">CONTÁCTAME</P>
                                 <form id="comment_form" class="form-contact" action="send-mail.php">
                                     <div class="form-group">                          
-                                        <input type="text" class="form-control input-contact" id="name" aria-describedby="emailHelp" placeholder="Nombre">
+                                        <input type="text" class="form-control input-contact" id="name" aria-describedby="emailHelp" placeholder="Nombre" required>
                                       </div>
                                       <div class="form-group">
-                                        <input type="email" class="form-control input-contact" id="email" placeholder="Email">
+                                        <input type="email" class="form-control input-contact" id="email" placeholder="Email" required>
                                       </div>
                                       
                                       <div class="form-group">
                                             
-                                            <textarea class="form-control input-contact" placeholder="Mensaje" id="comment" rows="3"></textarea>
+                                            <textarea class="form-control input-contact" placeholder="Mensaje" id="comment" rows="3" required></textarea>
                                         </div>
                                       <button type="submit" class="btn btn-primary button-contact-form">Enviar</button>
                                       <br>
