@@ -32,10 +32,10 @@ $mj = new Mailjet( 'b8cc47ac4f167c8d610b12539f405fce', '3e95eb8a82e839d267a66530
   if($responseKeys["success"]) {
     $params = array(
         "method" => "POST",
-        "from" => "operezhernandez25@gmail.com",
+        "from" => "henryreyesreyes1@gmail.com",
         "to" => 'henryreyesreyes1@gmail.com',
         "subject" => "Contacto HenryDesign",
-        "html" => "</html><br><b>Mensaje de:</b> ".$name.",".$email."<br> <b>Comentario:</b> <br>".$comment."</html>"
+        "html" => "</html><br><b>Mensaje de:</b> ".$name.",<a href='mailto:".$email."'>".$email."</a><br> <b>Comentario:</b> <br>".$comment."</html>"
     );
     
     $result = $mj->sendEmail($params);

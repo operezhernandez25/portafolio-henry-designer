@@ -581,7 +581,7 @@ img.img-periscope-text {
     -o-background-size: cover;
     background-size: cover;
     background-color: #11172D;
-    height: 100vh;
+    min-height: 100vh;
 }
 
 .image-contact-logo {
@@ -653,4 +653,9 @@ img.img-periscope-text {
     max-width: 86px;
     float: right;
     margin-right: 29px;
+}
+
+.alert.alert-primary {
+    background-color: #06ffe9;
+    color: white !important;
 }

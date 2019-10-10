@@ -178,8 +178,10 @@
                         
                     </div>
                     <div class="col-md-4">
+                        
                         <img class="image-contact-logo" src="./images/contact/logo.png" alt="">
-                        <div style="background-color: rgba(0, 0, 0, 0.2);padding-bottom: 50px;">
+                        <div style="background-color: rgba(0, 0, 0, 0.2);padding-bottom: 50px;border-radius: 20px;">
+                           <div class="mensaje-form-send"></div>
                                 <P class="contact-text" style="TEXT-ALIGN:CENTER">CONTÁCTAME</P>
                                 <form id="comment_form" class="form-contact" action="send-mail.php">
                                     <div class="form-group">                          
@@ -194,8 +196,12 @@
                                             <textarea class="form-control input-contact" placeholder="Mensaje" id="comment" rows="3"></textarea>
                                         </div>
                                       <button type="submit" class="btn btn-primary button-contact-form">Enviar</button>
+                                      <br>
+                                      
                                 </form>
+                                
                                 <div class="div-social-media-contact">
+
                                     <img class="icon-social-media-contact" src="./images/icons/contact/fb.png" alt="">
                                     <img class="icon-social-media-contact" src="./images/icons/contact/insta.png" alt="">
                                     <img class="icon-social-media-contact" src="./images/icons/contact/in.png" alt="">
@@ -219,40 +225,7 @@
                 </div>
             </div>
     </div>
-    <div class="third-section container-fluid" data-aos="fade-up">
-            <div class="row">
-                    <div class="col-md-1"></div>
-                    <div class="col-md">
-                            <p class="footer-text">
-                                Gracias a mis amigos & Papás
-            
-                                Samuel Quintanilla
-                                Daniella Huezo
-                                Óscar Pérez
-                                Ambar Rodriguez
-                                Elsa De Miranda
-                                Evelio Miranda
-                            </p>
-                        </div>
-                    <div class="col-md">
-                        <p class="footer-text text-center">
-                                Hecho en El Salvador
-                                <span style="color:#06ffe9">2019</span>
-                        </p>
-                    </div>
-                    <div class="col-md">
-                        <p class="footer-text mail-text text-right">
-                            <a href="mailto:henrymiranda@gmail.com"><i class="far fa-envelope"></i> henrymiranda@gmail.com</a>
-                        </p>
-                        <div class="icons">
-                                <img src="./images/icons/fb-icon.png" alt="" width="30px" height="30px">
-                                <img src="./images/icons/in-icon.png" alt="" width="30px" height="30px">
-                                <img src="./images/icons/be-icon.png" alt="" width="30px" height="30px">
-                        </div>
-                    </div>
-                    <div class="col-md-1"></div>
-            </div>
-    </div>
+   
     
 
 <!--MODAL LA Periscope-->  
@@ -603,9 +576,11 @@
                    $.post("send-mail.php",{email: email, comment: comment,name:name, token: token}, function(result) {
                            console.log(result);
                            if(result.success) {
-                                   alert('Thanks for posting comment.')
+                                   $(".mensaje-form-send").empty();
+                                   $(".mensaje-form-send").html(' <div class="alert alert-primary" role="alert">Mensaje Enviado Correctamente!</div>')
                            } else {
-                                   alert('You are spammer ! Get the @$%K out.')
+                            $(".mensaje-form-send").empty();
+                                   $(".mensaje-form-send").html(' <div class="alert alert-danger" role="alert">El Mensaje no fue enviado!</div>')
                            }
                    });
            });;
