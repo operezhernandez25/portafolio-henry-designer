@@ -80,3 +80,16 @@ $('.switch').each(function() {
     }).trigger('change');
 
 });
+
+
+
+
+
+$(".mamalon-checkbox").change(function(){
+    let this_test = $(this);
+    
+    setTimeout(function () {
+            $("#"+$(this_test).data("modal")).modal("toggle");
+            
+        }, 1000);
+    })

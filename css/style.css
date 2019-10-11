@@ -5,7 +5,7 @@
     padding-top: 50px !important;
     background-image: url('../images/points-skyblue-opacity.png'),url('../images/degradado_Mesa.png');
     background-repeat: no-repeat;
-    min-height: 800px;
+    max-height: 100vh;
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
@@ -366,7 +366,7 @@ Tablet Resolution
 }
 
 
-div#modalPeriscope>div,div#modalLaBrochete>div ,div#modalQueChivo>div,div#modalLaBrocheteMarca>div,div#modalDeMaiz>div {
+div#modalPeriscope>div,div#modalLaBrochete>div ,div#modalQueChivo>div,div#modalLaBrocheteMarca>div,div#modalDeMaiz>div,div#modalMealTime>div {
     max-width: 84% !important;
     margin-right: auto;
     margin-left: auto;
@@ -423,19 +423,20 @@ img.img-periscope-text {
 
 
 .modal-backdrop.show {
-    opacity: 0.07;
+  opacity: 0.85;
+  background-color: #000;
 }
 
 .button-exit-modal {
-    position: fixed;
-    z-index: 9;
-    top: 49%;
-    right: 3%;
-    opacity: 1;
+  position: relative;
+  z-index: 9;
+  top: 49%;
+  left: 96%;
+  /* opacity: 1; */
 }
 
 .button-exit-modal>img{
-    width: 42px;
+    width: 28px;
 }
 
 .modal-body {
@@ -551,12 +552,14 @@ img.img-periscope-text {
 
 
   .background-portfolio-logo{
-    background-image: url(/images/points-white-background-short.png);
+    background-image: url('../images/points-white-background.png');
     background-position-y: -8px;
+    background-size: cover;
   }
 
   .main{
-    background-image: url(/images/points-white-background-long.png) !important;
+    background-image: url('../images/points-white-background.png') !important;
+    background-size: cover !important;
 
   }
 
@@ -650,7 +653,7 @@ img.img-periscope-text {
 }
 
 .arrow-up-img{
-    max-width: 86px;
+    max-width: 58px;
     float: right;
     margin-right: 29px;
 }
@@ -863,7 +866,17 @@ img.img-periscope-text {
   #overlay-carousel ul li a {
     color: #fefefe;
     text-decoration: none;
-    font-size: 5em;
-    font-family: 'TTNorms', sans-serif;
+    font-size: 35px;
+    font-family: Montserrat Extra Bold;
     font-weight: 900;
   }
+
+
+  label#overlay-button {
+    display: none;
+}
+
+
+.row.fourth-row {
+  min-height: 100vh;
+}

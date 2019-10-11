@@ -36,16 +36,7 @@
   transition: background .3s;
 }
 
-.main:before {
-  content: "";
-  position: absolute;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  background: url("http://ashleydutton.co.uk/assets/images/noise.png");
-  opacity: 0.5;
-}
+
 
 .main__slider {
   position: fixed !important;
@@ -276,22 +267,22 @@
 @keyframes grow {
   0% {
     font-variation-settings: "wght" 200;
-    font-size: 30px;
+    font-size: 26px;
   }
   100% {
     font-variation-settings: "wght" 650;
-    font-size: 30px;
+    font-size: 26px;
   }
 }
 
 @keyframes shrink {
   0% {
     font-variation-settings: "wght" 650;
-    font-size: 30px;
+    font-size: 22px;
   }
   100% {
     font-variation-settings: "wght" 200;
-    font-size: 30px;
+    font-size: 22px;
   }
 }
 
@@ -413,13 +404,7 @@ h1.main__title {
 }
 
 
-#overlay-carousel ul li a {
-  color: #fefefe;
-  text-decoration: none;
-  font-size: 5em;
-  font-family: 'TTNorms', sans-serif;
-  font-weight: 900;
-}
+
 
 .main__title{
   font-family:  'Montserrat Extra Bold';
