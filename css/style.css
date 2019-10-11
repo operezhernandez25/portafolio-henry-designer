@@ -184,11 +184,12 @@ i.fab {
 /* (1366x768) WXGA Display */
 @media  screen and (max-width: 1366px) {
     .img-henry {
-        width: 606px;
-        height: auto;
-        position: absolute;
-        right: -25%;
-        top: 17%;
+      width: 606px;
+      height: auto;
+      position: absolute;
+      right: -25%;
+      top: 77%;
+  
     
     }
     #overlay-button {
