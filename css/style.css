@@ -5,7 +5,7 @@
     padding-top: 50px !important;
     background-image: url('../images/points-skyblue-opacity.png'),url('../images/degradado_Mesa.png');
     background-repeat: no-repeat;
-    min-height: 800px;
+    max-height: 100vh;
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
@@ -155,7 +155,7 @@ i.fab {
         height: auto;
         position: absolute;
         right: -20%;
-        top: 17%;
+        bottom: -53%;
     }
     #overlay-button {
         position: absolute;
@@ -184,11 +184,12 @@ i.fab {
 /* (1366x768) WXGA Display */
 @media  screen and (max-width: 1366px) {
     .img-henry {
-        width: 606px;
-        height: auto;
-        position: absolute;
-        right: -25%;
-        top: 17%;
+      width: 606px;
+      height: auto;
+      position: absolute;
+      right: -25%;
+      top: 77%;
+  
     
     }
     #overlay-button {
@@ -366,7 +367,7 @@ Tablet Resolution
 }
 
 
-div#modalPeriscope>div,div#modalLaBrochete>div ,div#modalQueChivo>div,div#modalLaBrocheteMarca>div,div#modalDeMaiz>div {
+div#modalPeriscope>div,div#modalLaBrochete>div ,div#modalQueChivo>div,div#modalLaBrocheteMarca>div,div#modalDeMaiz>div,div#modalMealTime>div {
     max-width: 84% !important;
     margin-right: auto;
     margin-left: auto;
@@ -423,19 +424,20 @@ img.img-periscope-text {
 
 
 .modal-backdrop.show {
-    opacity: 0.07;
+  opacity: 0.85;
+  background-color: #000;
 }
 
 .button-exit-modal {
-    position: fixed;
-    z-index: 9;
-    top: 49%;
-    right: 3%;
-    opacity: 1;
+  position: relative;
+  z-index: 9;
+  top: 49%;
+  left: 96%;
+  /* opacity: 1; */
 }
 
 .button-exit-modal>img{
-    width: 42px;
+    width: 28px;
 }
 
 .modal-body {
@@ -551,12 +553,14 @@ img.img-periscope-text {
 
 
   .background-portfolio-logo{
-    background-image: url(/images/points-white-background-short.png);
+    background-image: url('../images/points-white-background.png');
     background-position-y: -8px;
+    background-size: cover;
   }
 
   .main{
-    background-image: url(/images/points-white-background-long.png) !important;
+    background-image: url('../images/points-white-background.png') !important;
+    background-size: cover !important;
 
   }
 
@@ -581,7 +585,7 @@ img.img-periscope-text {
     -o-background-size: cover;
     background-size: cover;
     background-color: #11172D;
-    height: 100vh;
+    min-height: 100vh;
 }
 
 .image-contact-logo {
@@ -653,4 +657,297 @@ img.img-periscope-text {
     max-width: 86px;
     float: right;
     margin-right: 29px;
+    max-width: 58px;
+    float: right;
+    margin-right: 29px;
+}
+
+.alert.alert-primary {
+    background-color: #06ffe9;
+    color: white !important;
+    font-family: Nexa Light;
+}
+
+.alert{
+    font-family: Nexa Light;
+}
+
+.grecaptcha-badge{
+	visibility: collapse !important;  
+}
+
+
+
+
+
+
+
+
+
+
+
+  .ham {
+    cursor: pointer;
+    -webkit-tap-highlight-color: transparent;
+    transition: transform 400ms;
+    -moz-user-select: none;
+    -webkit-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+  }
+  .hamRotate.active {
+    transform: rotate(45deg);
+  }
+  .hamRotate180.active {
+    transform: rotate(180deg);
+  }
+  .line {
+    fill:none;
+    transition: stroke-dasharray 400ms, stroke-dashoffset 400ms;
+    stroke:white;
+    stroke-width:5.5;
+    stroke-linecap:round;
+  }
+  .ham1 .top {
+    stroke-dasharray: 40 139;
+  }
+  .ham1 .bottom {
+    stroke-dasharray: 40 180;
+  }
+  .ham1.active .top {
+    stroke-dashoffset: -98px;
+  }
+  .ham1.active .bottom {
+    stroke-dashoffset: -138px;
+  }
+  .ham2 .top {
+    stroke-dasharray: 40 121;
+  }
+  .ham2 .bottom {
+    stroke-dasharray: 40 121;
+  }
+  .ham2.active .top {
+    stroke-dashoffset: -102px;
+  }
+  .ham2.active .bottom {
+    stroke-dashoffset: -102px;
+  }
+  .ham3 .top {
+    stroke-dasharray: 40 130;
+  }
+  .ham3 .middle {
+    stroke-dasharray: 40 140;
+  }
+  .ham3 .bottom {
+    stroke-dasharray: 40 205;
+  }
+  .ham3.active .top {
+    stroke-dasharray: 75 130;
+    stroke-dashoffset: -63px;
+  }
+  .ham3.active .middle {
+    stroke-dashoffset: -102px;
+  }
+  .ham3.active .bottom {
+    stroke-dasharray: 110 205;
+    stroke-dashoffset: -86px;
+  }
+  .ham4 .top {
+    stroke-dasharray: 40 121;
+  }
+  .ham4 .bottom {
+    stroke-dasharray: 40 121;
+  }
+  .ham4.active .top {
+    stroke-dashoffset: -68px;
+  }
+  .ham4.active .bottom {
+    stroke-dashoffset: -68px;
+  }
+  .ham5 .top {
+    stroke-dasharray: 40 82;
+  }
+  .ham5 .bottom {
+    stroke-dasharray: 40 82;
+  }
+  .ham5.active .top {
+    stroke-dasharray: 14 82;
+    stroke-dashoffset: -72px;
+  }
+  .ham5.active .bottom {
+    stroke-dasharray: 14 82;
+    stroke-dashoffset: -72px;
+  }
+  .ham6 .top {
+    stroke-dasharray: 40 172;
+  }
+  .ham6 .middle {
+    stroke-dasharray: 40 111;
+  }
+  .ham6 .bottom {
+    stroke-dasharray: 40 172;
+  }
+  .ham6.active .top {
+    stroke-dashoffset: -132px;
+  }
+  .ham6.active .middle {
+    stroke-dashoffset: -71px;
+  }
+  .ham6.active .bottom {
+    stroke-dashoffset: -132px;
+  }
+  .ham7 .top {
+    stroke-dasharray: 40 82;
+  }
+  .ham7 .middle {
+    stroke-dasharray: 40 111;
+  }
+  .ham7 .bottom {
+    stroke-dasharray: 40 161;
+  }
+  .ham7.active .top {
+    stroke-dasharray: 17 82;
+    stroke-dashoffset: -62px;
+  }
+  .ham7.active .middle {
+    stroke-dashoffset: 23px;
+  }
+  .ham7.active .bottom {
+    stroke-dashoffset: -83px;
+  }
+  .ham8 .top {
+    stroke-dasharray: 40 160;
+  }
+  .ham8 .middle {
+    stroke-dasharray: 40 142;
+    transform-origin: 50%;
+    transition: transform 400ms;
+  }
+  .ham8 .bottom {
+    stroke-dasharray: 40 85;
+    transform-origin: 50%;
+    transition: transform 400ms, stroke-dashoffset 400ms;
+  }
+  .ham8.active .top {
+    stroke-dashoffset: -64px;
+  }
+  .ham8.active .middle {
+    stroke-dashoffset: -20px;
+    transform: rotate(90deg);
+  }
+  .ham8.active .bottom {
+    stroke-dashoffset: -64px;
+  }
+  
+
+  #overlay-carousel {
+    height: 100vh;
+    width: 100vw;
+    background-image: url('../../images/background-menu.jpg');
+    background-repeat: no-repeat;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    z-index: 2;
+    position: fixed;
+    top:0px;
+  }
+  
+  #overlay-carousel ul {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+    height: 100vh;
+    padding-left: 0;
+    list-style-type: none;
+    
+  }
+  
+  
+  #overlay-carousel ul li a {
+    color: #fefefe;
+    text-decoration: none;
+    font-size: 35px;
+    font-family: Montserrat Extra Bold;
+    font-weight: 900;
+  }
+
+
+  label#overlay-button {
+    display: none;
+}
+
+
+.row.fourth-row {
+  min-height: 100vh;
+}
+
+
+
+
+
+/*
+
+    RESPONSIVE
+*/
+
+
+div#first-secion-scroll {
+    min-height: 100vh !important;
+    height: 100%;
+}
+
+body{
+    overflow-x: hidden;
+}
+
+
+
+
+
+@media (min-width: 768px) {
+    .box-inside-white{
+        background-image: url(../images/quien/background-quien.png);
+        background-size: contain;
+        background-repeat: no-repeat;
+        background-position: right;
+    }
+
+}
+
+@media (max-width: 767px) {
+    .img-henry{
+        width:50%;
+        right: -2%;
+    }
+    
+
+}
+
+@media(max-width:1072px){
+    .box-inside-white{
+        background-size: 50% 100%;
+    }
+}
+
+.img-henry-mobile{
+    display: none !important;
+}
+
+.logo-portafolio{
+    max-width: 183%;
+    margin-left: 84px;
+}
+
+@media(max-width:516px){
+    .logo-portafolio{
+        max-width: 100%;
+        margin-left: 0px;
+    }
+    .logo-portafolio-container{
+        text-align: center;
+    }
 }

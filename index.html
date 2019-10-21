@@ -7,17 +7,51 @@
 
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="./css/bootstrap.min.css">
-    <link rel="stylesheet" href="./css/style.css?v=1.24">
+    <link rel="stylesheet" href="./css/style.css?v=1.239">
     <link rel="stylesheet" href="./fonts/fonts.css">
     <link rel="stylesheet" href="./css/carousel/style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.css">
     <link rel="stylesheet" href="css/switch.css">
+    <link rel="apple-touch-icon" sizes="57x57" href="./images/favicon/apple-icon-57x57.png">
+    <link rel="apple-touch-icon" sizes="60x60" href="./images/favicon/apple-icon-60x60.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="./images/favicon/apple-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="76x76" href="./images/favicon/apple-icon-76x76.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="./images/favicon/apple-icon-114x114.png">
+    <link rel="apple-touch-icon" sizes="120x120" href="./images/favicon/apple-icon-120x120.png">
+    <link rel="apple-touch-icon" sizes="144x144" href="./images/favicon/apple-icon-144x144.png">
+    <link rel="apple-touch-icon" sizes="152x152" href="./images/favicon/apple-icon-152x152.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="./images/favicon/apple-icon-180x180.png">
+    <link rel="icon" type="image/png" sizes="192x192"  href="./images/favicon/android-icon-192x192.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="96x96" href="./images/favicon/favicon-96x96.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="./images/favicon/favicon-16x16.png">
+    <link rel="manifest" href="./images/favicon/manifest.json">
+    <meta name="msapplication-TileColor" content="#ffffff">
+    <meta name="msapplication-TileImage" content="/ms-icon-144x144.png">
+    <meta name="theme-color" content="#ffffff">
     <title>Henry Miranda!</title>
+    
   </head>
   <body>
+      
+    <!-- <svg class="ham ham6" viewBox="0 0 100 100" width="80" onclick="this.classList.toggle('active')" style="z-index: 999;
+      position: absolute;
+      top: 89px;
+      right: 10%;
+      color: white;">
+          <path
+                class="line top"
+                d="m 30,33 h 40 c 13.100415,0 14.380204,31.80258 6.899646,33.421777 -24.612039,5.327373 9.016154,-52.337577 -12.75751,-30.563913 l -28.284272,28.284272" />
+          <path
+                class="line middle"
+                d="m 70,50 c 0,0 -32.213436,0 -40,0 -7.786564,0 -6.428571,-4.640244 -6.428571,-8.571429 0,-5.895471 6.073743,-11.783399 12.286435,-5.570707 6.212692,6.212692 28.284272,28.284272 28.284272,28.284272" />
+          <path
+                class="line bottom"
+                d="m 69.575405,67.073826 h -40 c -13.100415,0 -14.380204,-31.80258 -6.899646,-33.421777 24.612039,-5.327373 -9.016154,52.337577 12.75751,30.563913 l 28.284272,-28.284272" />
+        </svg>--> 
         <input type="checkbox" id="overlay-input">
         <label for="overlay-input" id="overlay-button" class="fas  fa-2x menu"></label>
-        <div id="overlay">
+        <div id="overlay-carousel" style="display:none;">
                 <ul>
                     <li><a href="portfolio.html">INICIO</a></li>
                     <li><a href="about.html">¿QUIÉN SOY?</a></li>
@@ -34,7 +68,7 @@
                 
         </div>
 
-    <div class="first-section container-fluid" data-aos="fade-up">
+    <div class="first-section container-fluid" id="first-secion-scroll" data-aos="fade-up">
             
             
 
@@ -60,33 +94,45 @@
                         <img src="./images/icons/in-icon.png" alt="" width="30px" height="30px">
                         <img src="./images/icons/be-icon.png" alt="" width="30px" height="30px">
                     </div>
-                    <div class="col-md"></div>
+                    <div class="col-md text-center">
+                      <a class="scroll" href="#fourth-row-scroll"><img src="./images/arrow-how-i-am.png" style="width:8%" alt=""></a>
+                    </div>
                     <div class="col-md-2 resumen-ejecutivo" >
                         <span class="resumen-text">RESUMEN EJECUTIVO</span>
                     </div>
             </div>
     </div>
-    <div class="second-section container-fluid" data-aos="fade-up">
+    <div ></div>
+    <div id="fourth-row-scroll" class="second-section container-fluid" >
             <div class="row fourth-row">
-                    <div class="col-md-1" style="color: white"></div>
+                    <div   class="col-md-1" ></div>
                 <div class="col-md">
-                    <div class="box-inside-white">
+                    <div class="box-inside-white" >
                         <div class="row">
-                            <div class="col-md-1"></div>
-                            <div class="col-md-5">
-                                    <p class="who-am-i-text"><img src="./images/quien-soy.png" style="
-                                        width: 75%;
+                            
+                            <div class="col-md-6" style="padding-left: 30px;">
+                                    <p class="who-am-i-text"><img src="./images/quien/quiensoy.png" style="
+                                            width: 75%;
+    position: relative;
+    left: -32px;top:-26px;
                                     " alt=""></p>
-                                    <p class="henry-description" style="    font-family: Montserrat Regular;
-                                    font-size: 12px;">
-                                        Mi nombre es Henry Miranda. Soy diseñador de  UI & Branding, vivo en El Salvador, actualmente curso mi ultimo año en la Universidad Don Bosco.
-                                        <br><br>
-                                        Mis áreas de desempeño están enfocadas en el diseño de identidad corporativa, branding, logotipos, marcas, productos y diseño de interfaz de usuario, principalmente para emprendedores, startups, packaging de productos, entre otros, diseñando desde sus logotipos hasta la papelería corporativa, señalética, diseño de catálogos físicos y digitales, promocionales, diseño de empaques, bolsas, etiquetas y cajas, por medio del UI busco facilitar la comunicación entre la empresa y el usuario.
+                                    <p class="henry-description" style="
+                                    font-family: Montserrat Regular;
+                                    font-size: 13px;
+                                    color: #0b1130;
+                                    top: -20px;
+                                    position: relative;
+                                    ">
+                                       ¡Hola! Soy Henry Miranda, además de que soy salvadoreño, déjame contarte algunas cosas sobre mí: 
+                                      <br><br> 
+                                       Me interesé en el diseño gráfico desde el colegio y posteriormente inicié mis estudios profesionales, durante los últimos años he trabajado con distintas marcas, algunas reales y con muchos años en el mercado, otras que iniciaban como emprendimientos y algunas como propuestas propias para solucionar ciertos problemas, generalmente en el ámbito de la comunicación visual y la identidad de marca.
+                                       <br>  <br>     
+                                       Las áreas que más me apasionan son el diseño de identidad corporativa, branding, logotipos, marcas, packaging y el diseño UI buscando facilitar la comunicación entre la empresa y el usuario.
                                     </p>
                             </div>
                             <div class="col-md-6">
-                                <img src="./images/henry-img.png" class="img-henry" alt="">
-                                <img src="./images/henry-11.png" class="img-henry-mobile" style="display:none" alt="">
+                                <img src="./images/quien/texto1.png" class="img-henry" alt="">
+                              <!--<img src="./images/henry-11.png" class="img-henry-mobile" style="display:none" alt="">--> 
                             </div>
                         </div>
                     </div>
@@ -99,8 +145,8 @@
     </div>
     <div class="container-fluid background-portfolio-logo">
         <div class="row">
-            <div class="col-md-2">
-                <img style="max-width: 183%;margin-left: 19px;" src="./images/logos/logo-portfolio.png" alt="">
+            <div class="col-md-2 logo-portafolio-container">
+                <img class="logo-portafolio" style="" src="./images/logos/logo-portfolio.png" alt="">
             </div>
             <div class="col-md-8 text-center">
                 <p class="portafolio-text-center">PORTAFOLIO</p>
@@ -112,34 +158,40 @@
         
         <ul class="main__slider main__slider--countries" style="top: 50%;position: relative !important;">
             <li class="main__item">
-                <div class="main__image" data-modal="modalLaBrocheteMarca" style="background-image:url('./images/carousel/BROCHETTE-MARCA.png');background-size: contain;background-repeat: no-repeat;background-position-y: 0;"></div>
+                <div class="main__image" data-modal="modalLaBrocheteMarca" style="background-image:url('./images/carousel/CARRUSEL1-02.png');background-size: contain;background-repeat: no-repeat;background-position-y: 0;"></div>
                 <h1 class="main__title">LA BROCHETE</h1>
                     <p class="main__subtitle">RE-BRANDING</p>
             </li>
             <li class="main__item">
-                <div class="main__image"  data-modal="modalQueChivo" style="background-image:url('./images/carousel/QUE_CHIVO.png')"></div>
+                <div class="main__image"  data-modal="modalQueChivo" style="background-image:url('./images/carousel/CARRUSEL1-03.png')"></div>
                 <h1 class="main__title">QUÉ CHIVO</h1>
                 <p class="main__subtitle">PROYECTO UI</p>
               </li>
             <li class="main__item">
-                <div class="main__image" data-modal="modalPeriscope" style="background-image:url('./images/carousel/PERISCOPE.png')"></div>
+                <div class="main__image" data-modal="modalMealTime" style="background-image:url('./images/carousel/CARRUSEL1-04.png')"></div>
                 <h1 class="main__title">MEALTIME</h1>
                 <p class="main__subtitle">BRANDING-UI</p>
               </li>
             <li class="main__item">
-                <div class="main__image" data-modal="modalPeriscope" style="background-image:url('./images/carousel/PERISCOPE.png')"></div>
+                <div class="main__image" data-modal="modalPeriscope" style="background-image:url('./images/carousel/CARRUSEL1-05.png')"></div>
                 <h1 class="main__title">PERISCOPE</h1>
                 <p class="main__subtitle">SITIO WEB-RESPONSIVE</p>
             </li>
             <li class="main__item">
-                <div class="main__image" data-modal="modalDeMaiz" style="background-image:url('./images/carousel/DE_MAIZ.png');background-size: contain;background-repeat: no-repeat;background-position-y: 0;"></div>
+                <div class="main__image" data-modal="modalDeMaiz" style="background-image:url('./images/carousel/CARRUSEL1-06.png');background-size: contain;background-repeat: no-repeat;background-position-y: 0;"></div>
                 <h1 class="main__title">DE MAÍZ</h1>
                     <p class="main__subtitle">PROYECTO UI</p>
             </li>
               <li class="main__item">
-                <div class="main__image" data-modal="modalLaBrochete"  style="background-image:url('./images/carousel/BROCHETTE.png')"></div>
+                <div class="main__image" data-modal="modalLaBrochete"  style="background-image:url('./images/carousel/CARRUSEL1-07.png')"></div>
                 <h1 class="main__title">LA BROCHETE</h1>
                 <p class="main__subtitle">PROYECTO UI</p>
+              </li>
+              <li class="main__item">
+                <div class="main__image" data-modal="#"  style="background-image:url('./images/carousel/CARRUSEL-08.png')"></div>
+                <h1 class="main__title">CONTACTAME</h1>
+                <p class="main__subtitle"><a class="scroll" href="#contact-form-scroll">
+                    <img class="arrow-up-img" style="margin-right: 0px !important; "  src="./images/arrow-how-i-am.png" alt=""></a></p>
               </li>
           
               
@@ -170,31 +222,37 @@
         </div>
       
       </main>
-      <div class="contact-section container-fluid" data-aos="fade-up">
+      <div class="contact-section container-fluid" id="contact-form-scroll" data-aos="fade-up">
             <div class="row">
                     <div class="col-md-1"></div>
                     <div class="col-md-3">
                         
                     </div>
                     <div class="col-md-4">
+                        
                         <img class="image-contact-logo" src="./images/contact/logo.png" alt="">
-                        <div style="background-color: rgba(0, 0, 0, 0.2);padding-bottom: 50px;">
+                        <div style="background-color: rgba(0, 0, 0, 0.2);padding-bottom: 50px;border-radius: 20px;">
+                           <div class="mensaje-form-send"></div>
                                 <P class="contact-text" style="TEXT-ALIGN:CENTER">CONTÁCTAME</P>
-                                <form class="form-contact" action="">
+                                <form id="comment_form" class="form-contact" action="send-mail.php">
                                     <div class="form-group">                          
-                                        <input type="text" class="form-control input-contact" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Nombre">
+                                        <input type="text" class="form-control input-contact" id="name" aria-describedby="emailHelp" placeholder="Nombre" required>
                                       </div>
                                       <div class="form-group">
-                                        <input type="email" class="form-control input-contact" id="exampleInputPassword1" placeholder="Email">
+                                        <input type="email" class="form-control input-contact" id="email" placeholder="Email" required>
                                       </div>
                                       
                                       <div class="form-group">
                                             
-                                            <textarea class="form-control input-contact" placeholder="Mensaje" id="exampleFormControlTextarea1" rows="3"></textarea>
+                                            <textarea class="form-control input-contact" placeholder="Mensaje" id="comment" rows="3" required></textarea>
                                         </div>
                                       <button type="submit" class="btn btn-primary button-contact-form">Enviar</button>
+                                      <br>
+                                      
                                 </form>
+                                
                                 <div class="div-social-media-contact">
+
                                     <img class="icon-social-media-contact" src="./images/icons/contact/fb.png" alt="">
                                     <img class="icon-social-media-contact" src="./images/icons/contact/insta.png" alt="">
                                     <img class="icon-social-media-contact" src="./images/icons/contact/in.png" alt="">
@@ -214,44 +272,12 @@
                         <p class="copyright-contact">2019 © Henry Miranda | Sitio web por <span style="color:#06ffe9;     font-family: Nexa Bold;">Óscar Pérez</span></p>
                 </div>
                 <div class="col-md">
-                    <img class="arrow-up-img" src="./images/icons/contact/arrow-up.png" alt="">
+                  <a class="scroll" href="#first-secion-scroll">
+                    <img class="arrow-up-img"  src="./images/icons/contact/arrow-up.png" alt=""></a>
                 </div>
             </div>
     </div>
-    <div class="third-section container-fluid" data-aos="fade-up">
-            <div class="row">
-                    <div class="col-md-1"></div>
-                    <div class="col-md">
-                            <p class="footer-text">
-                                Gracias a mis amigos & Papás
-            
-                                Samuel Quintanilla
-                                Daniella Huezo
-                                Óscar Pérez
-                                Ambar Rodriguez
-                                Elsa De Miranda
-                                Evelio Miranda
-                            </p>
-                        </div>
-                    <div class="col-md">
-                        <p class="footer-text text-center">
-                                Hecho en El Salvador
-                                <span style="color:#06ffe9">2019</span>
-                        </p>
-                    </div>
-                    <div class="col-md">
-                        <p class="footer-text mail-text text-right">
-                            <a href="mailto:henrymiranda@gmail.com"><i class="far fa-envelope"></i> henrymiranda@gmail.com</a>
-                        </p>
-                        <div class="icons">
-                                <img src="./images/icons/fb-icon.png" alt="" width="30px" height="30px">
-                                <img src="./images/icons/in-icon.png" alt="" width="30px" height="30px">
-                                <img src="./images/icons/be-icon.png" alt="" width="30px" height="30px">
-                        </div>
-                    </div>
-                    <div class="col-md-1"></div>
-            </div>
-    </div>
+   
     
 
 <!--MODAL LA Periscope-->  
@@ -260,8 +286,8 @@
         <div class="modal-dialog  modal-lg" role="document">
         <div class="modal-content">
           <div class="modal-body">
-           <div class="row">
-             <div class="col-md-1">
+           <div class="row" style="height: 0;">
+             <div class="col-md-12 float-right">
                 <button type="button" class="close button-exit-modal" style="    float: none;" data-dismiss="modal" aria-label="Close">
                     <img src="./images/icons/X-05.png" alt="">
                 </button>
@@ -297,7 +323,20 @@
               
             <div class="row">
                 <div class="col-md-12" style="top:-2px;padding-left: 0px; padding-right: 0px;">
-                    <img class="img-periscope" src="./images/periscope/3.png" alt="">
+                    <img class="img-periscope" src="./images/periscope/3.png"  style="padding-bottom: 38px;" alt="">
+                    <label class="switch" style="
+                    width: 107px;
+                    margin-left: auto;
+                    margin-right: auto;
+                    text-align: center !important;
+                    padding-bottom: 38px;
+                ">
+                      <input type="checkbox" data-modal="modalPeriscope" class="mamalon-checkbox" checked>
+                      <div style=" right: -25%;">
+                          <canvas></canvas>
+                      </div>
+                      <span>Switch</span>
+                  </label>
                 </div>
             </div>
           
@@ -312,6 +351,77 @@
         </div>
         </div>
 
+<!--MODAL LA MealTime-->  
+<!-- Modal -->
+<div class="modal fade" id="modalMealTime" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog  modal-lg" role="document">
+  <div class="modal-content">
+    <div class="modal-body">
+     <div class="row" style="height: 0;">
+       <div class="col-md-12 float-right">
+          <button type="button" class="close button-exit-modal" style="    float: none;" data-dismiss="modal" aria-label="Close">
+              <img src="./images/icons/X-05.png" alt="">
+          </button>
+       </div>
+       <div class="col-md-6 text-center">
+          
+       </div>
+       <div class="col-md-5">
+          
+        
+          
+    
+       </div>
+     </div>
+     <div class="container-fluid" style="
+     padding-left: 0px;
+     padding-right: 0px;
+  ">
+      
+     
+  
+      
+          <div class="row">
+              <div class="col-md-12" style="padding-left: 0px; padding-right: 0px;">
+                <img class="img-periscope" src="./images/mealtime/1.png" alt="">
+                </div>
+          </div>
+          <div class="row">
+            <div class="col-md-12" style="padding-left: 0px; padding-right: 0px;">
+              <img class="img-periscope" src="./images/mealtime/2.png" alt="">
+              </div>
+        </div>
+        
+      <div class="row">
+          <div class="col-md-12" style="top:-2px;padding-left: 0px; padding-right: 0px;">
+              <img class="img-periscope" src="./images/mealtime/3.png"  style="padding-bottom: 38px;" alt="">
+              <label class="switch" style="
+              width: 107px;
+              margin-left: auto;
+              margin-right: auto;
+              text-align: center !important;
+              padding-bottom: 38px;
+          ">
+                <input type="checkbox" data-modal="modalMealTime" class="mamalon-checkbox" checked>
+                <div style=" right: -25%;">
+                    <canvas></canvas>
+                </div>
+                <span>Switch</span>
+            </label>
+          </div>
+      </div>
+    
+          
+    </div>
+    
+    
+     
+  </div>
+    
+  </div>
+  </div>
+  </div>        
+
 
 <!--MODAL LA BROCHETE-->  
 <!-- Modal -->
@@ -319,12 +429,12 @@
 <div class="modal-dialog  modal-lg" role="document">
 <div class="modal-content">
   <div class="modal-body">
-   <div class="row">
-     <div class="col-md-1">
-        <button type="button" class="close button-exit-modal" style="    float: none;" data-dismiss="modal" aria-label="Close">
-            <img src="./images/icons/X-05.png" alt="">
-        </button>
-     </div>
+   <div class="row" style="height: 0;">
+    <div class="col-md-12 float-right">
+      <button type="button" class="close button-exit-modal" style="    float: none;" data-dismiss="modal" aria-label="Close">
+          <img src="./images/icons/X-05.png" alt="">
+      </button>
+   </div>
      <div class="col-md-6 text-center">
         
      </div>
@@ -356,7 +466,20 @@
       
     <div class="row">
         <div class="col-md-12" style="top:-2px;padding-left: 0px; padding-right: 0px;">
-            <img class="img-periscope" src="./images/labrochete/3.png" alt="">
+            <img class="img-periscope" src="./images/labrochete/3.png"  style="padding-bottom: 38px;" alt="">
+            <label class="switch" style="
+            width: 107px;
+            margin-left: auto;
+            margin-right: auto;
+            text-align: center !important;
+            padding-bottom: 38px;
+        ">
+              <input type="checkbox" data-modal="modalLaBrochete" class="mamalon-checkbox" checked>
+              <div style=" right: -25%;">
+                  <canvas></canvas>
+              </div>
+              <span>Switch</span>
+          </label>
         </div>
     </div>
   
@@ -378,12 +501,12 @@
 <div class="modal-dialog  modal-lg" role="document">
 <div class="modal-content">
   <div class="modal-body">
-   <div class="row">
-     <div class="col-md-1">
-        <button type="button" class="close button-exit-modal" style="    float: none;" data-dismiss="modal" aria-label="Close">
-            <img src="./images/icons/X-05.png" alt="">
-        </button>
-     </div>
+   <div class="row" style="height: 0;">
+    <div class="col-md-12 float-right">
+      <button type="button" class="close button-exit-modal" style="    float: none;" data-dismiss="modal" aria-label="Close">
+          <img src="./images/icons/X-05.png" alt="">
+      </button>
+   </div>
      <div class="col-md-6 text-center">
         
      </div>
@@ -411,7 +534,20 @@
       </div>
       <div class="row">
         <div class="col-md-12" style="padding-left: 0px; padding-right: 0px;">
-          <img class="img-periscope" src="./images/heyquechivo/3.png" alt="">
+          <img class="img-periscope" src="./images/heyquechivo/3.png"  style="padding-bottom: 38px;" alt="">
+          <label class="switch" style="
+          width: 107px;
+          margin-left: auto;
+          margin-right: auto;
+          text-align: center !important;
+          padding-bottom: 38px;
+      ">
+            <input type="checkbox" data-modal="modalQueChivo" class="mamalon-checkbox" checked>
+            <div style=" right: -25%;">
+                <canvas></canvas>
+            </div>
+            <span>Switch</span>
+        </label>
           </div>
     
   
@@ -433,12 +569,12 @@
 <div class="modal-dialog  modal-lg" role="document">
 <div class="modal-content">
   <div class="modal-body">
-   <div class="row">
-     <div class="col-md-1">
-        <button type="button" class="close button-exit-modal" style="    float: none;" data-dismiss="modal" aria-label="Close">
-            <img src="./images/icons/X-05.png" alt="">
-        </button>
-     </div>
+   <div class="row" style="height: 0;">
+    <div class="col-md-12 float-right">
+      <button type="button" class="close button-exit-modal" style="    float: none;" data-dismiss="modal" aria-label="Close">
+          <img src="./images/icons/X-05.png" alt="">
+      </button>
+   </div>
      <div class="col-md-6 text-center">
         
      </div>
@@ -459,21 +595,34 @@
     
         <div class="row">
             <div class="col-md-12" style="padding-left: 0px; padding-right: 0px;">
-              <img class="img-periscope" src="./images/demaiz/DEMAIZ01.png" alt="">
+              <img class="img-periscope" src="./images/demaiz/DEMAIZ1.png" alt="">
               </div>
         </div>
         <div class="row">
           <div class="col-md-12" style="padding-left: 0px; padding-right: 0px;">
-            <img class="img-periscope" src="./images/demaiz/DEMAIZ02.png" alt="">
+            <img class="img-periscope" src="./images/demaiz/DEMAIZ2.png" alt="">
             </div>
       </div>
       <div class="row">
         <div class="col-md-12" style="padding-left: 0px; padding-right: 0px;">
-          <img class="img-periscope" src="./images/demaiz/DEMAIZ03.png" alt="">
+          <img class="img-periscope" src="./images/demaiz/DEMAIZ3.png" alt="">
           </div>
     <div class="row">
       <div class="col-md-12" >
-        <img class="img-periscope" src="./images/demaiz/DEMAIZ04.png" alt="">
+        <img class="img-periscope" src="./images/demaiz/DEMAIZ4.png" style="padding-bottom: 38px;" alt="">
+        <label class="switch" style="
+        width: 107px;
+        margin-left: auto;
+        margin-right: auto;
+        text-align: center !important;
+        padding-bottom: 38px;
+    ">
+          <input type="checkbox" data-modal="modalDeMaiz" class="mamalon-checkbox" checked>
+          <div style=" right: -25%;">
+              <canvas></canvas>
+          </div>
+          <span>Switch</span>
+      </label>
         </div>
   </div>
   
@@ -496,12 +645,12 @@
 <div class="modal-dialog  modal-lg" role="document">
   <div class="modal-content">
     <div class="modal-body">
-     <div class="row">
-       <div class="col-md-1">
-          <button type="button" class="close button-exit-modal" style="    float: none;" data-dismiss="modal" aria-label="Close">
-              <img src="./images/icons/X-05.png" alt="">
-          </button>
-       </div>
+     <div class="row" style="height: 0;">
+      <div class="col-md-12 float-right">
+        <button type="button" class="close button-exit-modal" style="    float: none;" data-dismiss="modal" aria-label="Close">
+            <img src="./images/icons/X-05.png" alt="">
+        </button>
+     </div>
        <div class="col-md-6 text-center">
           
        </div>
@@ -533,15 +682,16 @@
             </div>
       <div class="row">
         <div class="col-md-12" >
-          <img class="img-periscope" src="./images/labrochetemarca/4.png" alt="">
+          <img class="img-periscope" src="./images/labrochetemarca/4.png" style="padding-bottom: 38px;" alt="">
           <label class="switch" style="
           width: 107px;
           margin-left: auto;
           margin-right: auto;
           text-align: center !important;
+          padding-bottom: 38px;
       ">
-            <input type="checkbox" checked>
-            <div>
+            <input type="checkbox" data-modal="modalLaBrocheteMarca" class="mamalon-checkbox" checked>
+            <div style=" right: -25%;">
                 <canvas></canvas>
             </div>
             <span>Switch</span>
@@ -569,7 +719,7 @@
 
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
-    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <script src="js/bootstrap.min.js"></script>
     <script src="https://kit.fontawesome.com/01c0503862.js" crossorigin="anonymous"></script>
     <script src="./js/carousel.js?ver=0.01"></script>
@@ -580,7 +730,39 @@
     <script src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/107/three.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.1.3/TweenMax.min.js"></script>
-    <script src="/js/switch.js"></script>
+    <script src="./js/switch.js"></script>
+   <script src="./js/scroll.js"></script>
+   <script src="https://www.google.com/recaptcha/api.js?render=6LfH2LwUAAAAAFX5va3EJbgyWs_pNeeeEPU2eA16"></script>
+
+    <script>
+      // when form is submit
+   $('#comment_form').submit(function() {
+       // we stoped it
+       event.preventDefault();
+       var email = $('#email').val();
+       var name = $("#name").val();
+       var comment = $("#comment").val();
+       // needs for recaptacha ready
+       grecaptcha.ready(function() {
+           // do request for recaptcha token
+           // response is promise with passed token
+           grecaptcha.execute('6LfH2LwUAAAAAFX5va3EJbgyWs_pNeeeEPU2eA16', {action: 'create_comment'}).then(function(token) {
+               // add token to form
+               $('#comment_form').prepend('<input type="hidden" name="g-recaptcha-response" value="' + token + '">');
+                   $.post("send-mail.php",{email: email, comment: comment,name:name, token: token}, function(result) {
+                           console.log(result);
+                           if(result.success) {
+                                   $(".mensaje-form-send").empty();
+                                   $(".mensaje-form-send").html(' <div class="alert alert-primary" role="alert">Mensaje Enviado Correctamente!</div>')
+                           } else {
+                            $(".mensaje-form-send").empty();
+                                   $(".mensaje-form-send").html(' <div class="alert alert-danger" role="alert">El Mensaje no fue enviado!</div>')
+                           }
+                   });
+           });;
+       });
+ });
+ </script>
     <script>
     const countries = document.querySelector(".countries"),
   sports = document.querySelector(".sports"),
@@ -622,6 +804,11 @@ $(".main__slider").slick({
     }
   ]
 });
+
+$(".ham.ham6").click(function(){
+
+$("#overlay-carousel").toggle();
+})
 </script>
   </body>
 </html>
