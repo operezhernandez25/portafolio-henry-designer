@@ -149,7 +149,7 @@ i.fab {
     font-size: 14px;
 }
 
-@media  screen and (max-width: 1920px){
+@media  screen and (min-width: 1367px){
     .img-henry {
         width: 563px;
         height: auto;
