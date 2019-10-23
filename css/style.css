@@ -53,7 +53,7 @@
 
 
 .fourth-row{
-    padding-top: 8%;
+    padding-top: 3%;
 }
 
 .menu{
@@ -567,8 +567,7 @@ img.img-periscope-text {
   .portafolio-text-center{
       color:#0a2240;
       padding-top: 23%;
-      font-size: 44px;
-      font-family: 'Nexa Light';
+      font-family: Montserrat Extra Bold;
   }
 
 
@@ -910,7 +909,7 @@ body{
 
 @media (min-width: 768px) {
     .box-inside-white{
-        background-image: url(../images/quien/background-quien.png);
+        background-image: url(../images/quien/background-quien-final.png);
         background-size: contain;
         background-repeat: no-repeat;
         background-position: right;
@@ -950,4 +949,13 @@ body{
     .logo-portafolio-container{
         text-align: center;
     }
+}
+
+
+
+
+.reel-2019-text{
+  text-align: center;
+  font-family:Montserrat Extra Bold;
+  color:#11172D;
 }

@@ -39,11 +39,10 @@
 
 
 .main__slider {
-  position: fixed !important;
   width: 100vw;
   /*top: 50%;*/
   left: 0;
-  transform: translateY(-50%);
+  margin-top:40px
 }
 
 .main__slider.slick-initialized .slick-slide {
