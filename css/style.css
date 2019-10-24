@@ -61,9 +61,6 @@
 }
 
 
-.fourth-row{
-    padding-top: 3%;
-}
 
 .menu{
     color: white;
@@ -964,4 +961,19 @@ body{
   text-align: center;
   font-family:Montserrat Extra Bold;
   color:#11172D;
+}
+
+
+.col-md.video-div {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+@media(max-width:801px){
+  iframe{
+    width: 1019px;
+    height: 602px;
+}
 }
