@@ -12,6 +12,7 @@
     <link rel="stylesheet" href="./css/carousel/style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.css">
     <link rel="stylesheet" href="css/switch.css">
+    <link rel="stylesheet" href="css/menu.css">
     <link rel="apple-touch-icon" sizes="57x57" href="./images/favicon/apple-icon-57x57.png">
     <link rel="apple-touch-icon" sizes="60x60" href="./images/favicon/apple-icon-60x60.png">
     <link rel="apple-touch-icon" sizes="72x72" href="./images/favicon/apple-icon-72x72.png">
@@ -55,58 +56,46 @@
             
 
 
-            <div class="row first-row">
-                    <div class="col-md"></div>
-                    <div class="col-md-2">
+            <div class="row first-row" style="flex-direction: row-reverse; margin-right: 3px;">
+                    <div class="col-md-2" >
+                   
                             
-                      <nav class="navbar navbar-expand-lg navbar-light bg-light">
-                        <a class="navbar-brand" href="#"><img src="./images/LOGOHOME.png" style="width: 55px;" alt=""></a>
-                        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                          <span class="navbar-toggler-icon"></span>
-                        </button>
-                      
-                        <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                          <ul class="navbar-nav mr-auto">
-                            
-                          </ul>
-                          <nav class="nav-menu">
-                                <input type="checkbox" class="nav__cb" id="menu-cb"/>
-                                <div class="nav__content">
-                                  <ul class="nav__items">
-                                    <li class="nav__item">
-                                      <span class="nav__item-text">
-                                        Home
-                                      </span>
-                                    </li>
-                                    <li class="nav__item">
-                                      <span class="nav__item-text">
-                                        Works
-                                      </span>
-                                    </li>
-                                    <li class="nav__item">
-                                      <span class="nav__item-text">
-                                        About
-                                      </span>
-                                    </li>
-                                    <li class="nav__item">
-                                      <span class="nav__item-text">
-                                        Contact
-                                      </span>
-                                    </li>
-                                  </ul>
-                                </div>
-                                <label class="nav__btn" for="menu-cb"></label>
-                              </nav>
-                        </div>
-                </nav>
+                        <nav class="nav-menu">
+                            <input type="checkbox" class="nav__cb" id="menu-cb"/>
+                            <div class="nav__content">
+                              <ul class="nav__items">
+                                <li class="nav__item">
+                                  <span class="nav__item-text">
+                                    Inicio
+                                  </span>
+                                </li>
+                                <li class="nav__item">
+                                  <span class="nav__item-text">
+                                    <a href="quien-soy.html"> Henry</a>
+                                  </span>
+                                </li>
+                                <li class="nav__item">
+                                  <span class="nav__item-text">
+                                   <a href="#fourth-row-scroll" class="scroll"> Reel</a>
+                                  </span>
+                                </li>
+                                <li class="nav__item">
+                                  <span class="nav__item-text">
+                                  <a class="scroll" href="#contact-form-scroll">Contáctame</a>
+                                  </span>
+                                </li>
+                              </ul>
+                            </div>
+                            <label class="nav__btn" for="menu-cb"></label>
+                          </nav>
                         
                     </div>
             </div>
             <div class="row second-row">
                     <div class="col-md-2 image-div" style="color: white"></div>
-                <div class="col-md logo-div-index"><img src="./images/logo-white-new.png" id="logo-henry"  alt=""></div>
+                <div class="col-md logo-div-index"style="padding-top: 64px;"><img src="./images/logo-white-new.png" id="logo-henry"  alt=""></div>
                 <div class="col-md-2 button-div" >
-                    <button class="btn btn-outline-light btn-descargar  btn-lg" style="color: white">Descargar</button>
+                    <a class="btn btn-outline-light btn-descargar  btn-lg" style="color: white" href="./resume/Resumen  - Henry Miranda.pdf">Descargar</a>
                 </div>
             </div>
             <div class="row three-row">
@@ -119,24 +108,31 @@
                       <a class="scroll" href="#fourth-row-scroll"><img src="./images/arrow-how-i-am.png" style="width:8%" alt=""></a>
                     </div>
                     <div class="col-md-2 resumen-ejecutivo" >
-                        <span class="resumen-text">RESUMEN EJECUTIVO</span>
+                        <span class="resumen-text">RESUMEN CREATIVO</span>
                     </div>
             </div>
     </div>
     <div ></div>
-    <div id="fourth-row-scroll" class="second-section container-fluid"  >
+    <div class="second-section container-fluid"  >
+            <div class="row">
+                <div class="col-md-12 text-center">
+                    <h1  id="fourth-row-scroll" class="reel-2019-text" style="
+                    padding-top: 50px;
+                    padding-bottom: 0px;
+                    margin-bottom: 0px;">REEL 2019</h1>
+                </div>
+            </div>
             <div class="row fourth-row" >
                     <div   class="col-md-1" ></div>
-                <div class="col-md video-div">
+                <div class="col-md">
                         <!-- 16:9 aspect ratio -->
                       
-                        <h1 class="reel-2019-text">REEL 2019</h1>
+                       
                       
-                      <div style="display: flex;
-                      justify-content: center;
+                      <div style="display: flex; justify-content: center; margin: 40px 0px;
                      ">
-                        <iframe class="" src="https://player.vimeo.com/video/367718672"
-                        width="1000" height="500" frameborder="0" webkitallowfullscreen="" mozallowfullscreen="" allowfullscreen=""></iframe>
+                        <iframe class="" src="https://player.vimeo.com/video/367718672?color=ffffff"
+                        width="1280" height="720" frameborder="0" webkitallowfullscreen="" mozallowfullscreen="" allowfullscreen=""></iframe>
                       </div>
                 </div>
                 <div class="col-md-1" >
@@ -230,7 +226,7 @@
                     <div class="col-md-3">
                         
                     </div>
-                    <div class="col-md-4">
+                    <div class="col-md-4 container-logo-contact">
                         
                         <img class="image-contact-logo" src="./images/contact/logo.png" alt="">
                         <div style="background-color: rgba(0, 0, 0, 0.2);padding-bottom: 50px;border-radius: 20px;">
@@ -271,7 +267,7 @@
             <div class="row">
                 <div class="col-md"></div>
                 <div class="col-md-6">
-                        <p class="copyright-contact">2019 © Henry Miranda | Sitio web por <span style="color:#06ffe9;     font-family: Nexa Bold;">Óscar Pérez</span></p>
+                        <p class="copyright-contact">2019 © Henry Miranda | Sitio web por <span style="color:#06ffe9;     font-family: Nexa Bold;">Oscar Pérez</span></p>
                 </div>
                 <div class="col-md">
                   <a class="scroll" href="#first-secion-scroll">
@@ -795,7 +791,7 @@ $(".main__slider").slick({
   slidesToScroll: 1,
   arrows: false,
   initialSlide: 2,
-  autoplay:true,
+ // autoplay:true,
   responsive: [
     {
       breakpoint: 1000,

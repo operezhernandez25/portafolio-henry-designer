@@ -274,6 +274,8 @@
   }
 }
 
+
+
 @keyframes shrink {
   0% {
     font-variation-settings: "wght" 650;
@@ -311,52 +313,7 @@
 
 /*---------------------------------------*/
 
-@media only screen and (max-width: 650px){
-  .main__image {
-    height: 350px;
-  }
 
-  .main__info {
-    top: 20px;
-    right: 20px;
-  }
-
-  .main__item.slick-slide {
-    margin: 0 20px;
-  }
-
-  .main__credit {
-    bottom: 25px;
-    right: 25px;
-  }
-
-  .main__options {
-    bottom: 25px;
-    left: 25px;
-  }
-
-  @keyframes grow {
-    0% {
-      font-variation-settings: "wght" 200;
-      font-size: 65px;
-    }
-    100% {
-      font-variation-settings: "wght" 650;
-      font-size: 65px;
-    }
-  }
-
-  @keyframes shrink {
-    0% {
-      font-variation-settings: "wght" 650;
-      font-size: 65px;
-    }
-    100% {
-      font-variation-settings: "wght" 200;
-      font-size: 65px;
-    }
-  }
-}
 
 
 
