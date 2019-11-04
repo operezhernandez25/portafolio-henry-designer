@@ -112,6 +112,7 @@
 .btn.btn-outline-light.btn-descargar.btn-lg:hover {
     background-color: #06ffe9;
     border: none;
+    color: white !important;
 }
 
 .social-media-icons{
@@ -161,7 +162,7 @@ i.fab {
         height: auto;
         position: absolute;
         right: -20%;
-        bottom: -53%;
+        bottom: -37%;
     }
     #overlay-button {
         position: absolute;
@@ -435,15 +436,15 @@ img.img-periscope-text {
 }
 
 .button-exit-modal {
-  position: relative;
-  z-index: 9;
-  top: 49%;
-  left: 96%;
-  /* opacity: 1; */
+  /*float: none; */
+  position: fixed;
+  top: 50vh;
+  /* right: 3vw; */
+  left: 93%;
 }
 
 .button-exit-modal>img{
-    width: 28px;
+    width: 44px;
 }
 
 .modal-body {
