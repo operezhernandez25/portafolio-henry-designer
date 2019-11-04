@@ -989,6 +989,9 @@ iframe{
   .col-md-2.logo-portafolio-container {
     display: none;
 }
+
+
+
 .container-logo-contact{
   text-align: center;
 }
@@ -1010,3 +1013,4 @@ iframe{
 .nav__item-text.active{
   color:#06ffe9 !important;
 }
+
