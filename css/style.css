@@ -195,7 +195,7 @@ i.fab {
       height: auto;
       position: absolute;
       right: -25%;
-      top: 77%;
+      top: 61%;
   
     
     }
@@ -1007,3 +1007,6 @@ iframe{
 }
 
 
+.nav__item-text.active{
+  color:#06ffe9 !important;
+}
